@@ -28,9 +28,8 @@ public class ArchivoEscritura {
         
     }
 
-    public void establecerInformacionAnterior() {
-        
-        
+   /* public void establecerInformacionAnterior() {
+ 
         ArchivoLectura lectura = new ArchivoLectura(nombreArchivo);
         lectura.establecerLista();
         ArrayList<Calificacion> lista = lectura.obtenerLista();
@@ -51,7 +50,7 @@ public class ArchivoEscritura {
             System.err.println("Error al leer del archivo: " + e);
 
         } // fin de catch
-    }
+    }*/
     
     public void establecerNombreArchivo(String n) {
         nombreArchivo = n;
