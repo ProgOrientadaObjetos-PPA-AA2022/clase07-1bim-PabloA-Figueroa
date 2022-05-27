@@ -19,7 +19,7 @@ public class EscrituraArchivoSecuencial {
 
     private String nombreArchivo;
     private ObjectOutputStream salida; 
-    private Profesor registroProfesor;
+     private Profesor registroProfesor;
     private ArrayList<Profesor> listaProfesores;
 
     public EscrituraArchivoSecuencial(String nombreArc) {
