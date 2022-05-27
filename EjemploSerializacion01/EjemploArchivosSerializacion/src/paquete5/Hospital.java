@@ -16,15 +16,21 @@ public class Hospital implements Serializable {
     String nombre;
     int numeroCamas;
     double presupuesto;
+    String idHospital;
 
-    public Hospital(String n, int t, double p) {
+    public Hospital(String n, int t, double p, String id) {
         nombre = n;
         numeroCamas = t;
         presupuesto = p;
+        idHospital = id;
     }
 
     public void establecerNombre(String n) {
         nombre = n;
+    }
+
+    public void establecerID(String n) {
+        idHospital = n;
     }
 
     public void establecerNumeroCamas(int t) {
@@ -39,11 +45,24 @@ public class Hospital implements Serializable {
         return nombre;
     }
 
+    public String obtenerID() {
+        return idHospital;
+    }
+
     public int obtenerNumeroCamas() {
         return numeroCamas;
     }
 
     public double obtenerPresupuesto() {
         return presupuesto;
+    }
+    @Override
+    public String toString(){
+        String valor = String.format("Nombre: %s - Numero de Camas: %d - Presupuesto:%.2f -"
+                + " Id:%s\n", obtenerNombre(), 
+                obtenerNumeroCamas(),
+                obtenerPresupuesto(),
+                obtenerID());
+        return valor;
     }
 }

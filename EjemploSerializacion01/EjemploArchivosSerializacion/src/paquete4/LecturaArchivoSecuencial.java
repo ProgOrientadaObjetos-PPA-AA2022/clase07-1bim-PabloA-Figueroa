@@ -83,7 +83,7 @@ public class LecturaArchivoSecuencial {
                     
                     if(registro.obtenerCedula().equals(identificador)){
                         profesorBuscado = registro;
-                        break;
+                        break;//Salir obligatoriamente del ciclo
                     }
                     
                 } catch (EOFException endOfFileException) {
